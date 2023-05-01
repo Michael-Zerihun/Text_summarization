@@ -1,0 +1,42 @@
+{% extends 'base.html' %} {% block body %}
+<div class="container pt-5">
+    <div class="row pt-5">
+        <div class="col">
+            <div class="mb-3 bg-info-subtle rounded">
+                <form action="/summarize" method="post">
+                    <label for="exampleFormControlTextarea1" class="form-label"
+                        ><h3 class="ps-2">Input text</h3></label
+                    >
+                    <textarea
+                        class="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="15"
+                        name="text"
+                    > 
+{{ text }}</textarea
+                    >
+                    <br />
+                    <div class="d-flex flex-row-reverse p-2">
+                        <input
+                            type="submit"
+                            name="submit"
+                            id="submit"
+                            value="Summarize"
+                            class="btn btn-primary"
+                        />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col">
+            <div
+                class="container bg-success-subtle h-75 d-inline-block rounded overflow-auto"
+            >
+                <h1>Summary</h1>
+                <hr />
+                <p class="" >{{ summary }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
