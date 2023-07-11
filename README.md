@@ -2,6 +2,10 @@
 
 The project is a web-based application that takes long text input and summarizes it using Hugging Face's 🤗  Transformers library. The project uses the PyTorch framework to train and deploy the model and the Flask framework to create a web interface for users to interact with. The frontend is designed using the Bootstrap CSS framework.
 
+---
+An explanation video: 
+https://youtu.be/fQHMUrZnvBA
+
 ## Requirements
 
 The following are the requirements for running the project:
